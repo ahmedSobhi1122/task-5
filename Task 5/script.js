@@ -49,9 +49,12 @@ function isdiv10(num) {
 //Q5
 function vowels(str) {
     let cnt = 0;
+    str = str.toLowerCase();
+    // console.log(str);
     for(let char of str){
         if(char == 'a' || char == 'e' || char == 'i' || char == 'o' || char == 'u'){
             cnt++;
+            // console.log(char);
         }
     }
     return cnt;
@@ -59,4 +62,4 @@ function vowels(str) {
 
 
 //test
-// console.log("Number of vowels:",vowels("ahmed"));
+//  console.log("Number of vowels:",vowels("Ahmed"));
